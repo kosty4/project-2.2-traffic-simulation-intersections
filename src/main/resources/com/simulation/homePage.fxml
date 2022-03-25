@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.simulation.homePageController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="createButton" mnemonicParsing="false" onAction="#createGraphbtn" prefHeight="42.0" prefWidth="165.0" text="Create configuration" />
+            <Button fx:id="loadButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#loadGraphbtn" prefHeight="41.0" prefWidth="262.0" text="Load configuration">
+               <graphic>
+                  <TextField fx:id="textHolder" prefWidth="100.0" text="Graph2" />
+               </graphic>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+</BorderPane>
